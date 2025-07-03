@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HardwareTech - Servicios</title>
+  <link rel="stylesheet" href="CSS.css" />
+  <link rel="icon" href="LOGO.png">
+  <script defer>
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggle = document.getElementById('menu-toggle');
+      const menu = document.getElementById('menu');
+      toggle.addEventListener('click', () => {
+        menu.classList.toggle('activo');
+      });
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <nav class="nav-principal">
+      <div class="logo-container">
+        <a href="INDEX.html"><img src="LOGO.png" alt="Logo" class="logo-img" /></a>
+        <h1 class="logo">HARDWARE TECH</h1>
+      </div>
+      <button id="menu-toggle" class="menu-toggle">☰</button>
+      <ul class="menu" id="menu">
+        <li><a href="PRODUCTOS.html">🖥️ PRODUCTOS</a></li>
+        <li><a href="SERVICIOS.html">🛠️ SERVICIOS</a></li>
+        <li><a href="NOSOTROS.html">📘 SOBRE NOSOTROS</a></li>
+        <li><a href="USUARIO.html">👤 ASESORIA</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contenido">
+   <a href="INICIO.html"><img src="SERVI.png" style="width:100%;"></a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 HardwareTech. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

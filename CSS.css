@@ -1,0 +1,380 @@
+
+:root {
+  --color-primario: #1E2A38;
+  --color-secundario: #00C896;
+  --color-fondo: #F5F5F5;
+  --color-texto: #333333;
+  --fuente-titulos: 'Orbitron', sans-serif;
+  --fuente-texto: 'Open Sans', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fuente-texto);
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--color-primario);
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.nav-principal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo-img {
+  width: 90px;
+  height: auto;
+}
+
+.logo {
+  font-family: var(--fuente-titulos);
+  font-size: 1.5rem;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+  font-size: 1rem;
+}
+
+.menu li a:hover {
+  color: var(--color-secundario);
+}
+
+.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(to right, #d1f7f2, #e8f5f1);
+}
+
+.hero h2 {
+  font-family: var(--fuente-titulos);
+  font-size: 2rem;
+  color: var(--color-primario);
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  background-color: var(--color-secundario);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.destacados {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.destacados h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.producto {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  max-width: 250px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+}
+
+.producto img {
+  max-width: 100px;
+  margin-bottom: 1rem;
+}
+
+.productos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 2rem;
+}
+.producto {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 1rem;
+  max-width: 250px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.producto:hover {
+  transform: scale(1.05);
+}
+.producto img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+.producto button {
+  margin-top: 0.5rem;
+  background: #00c896;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.producto button:hover {
+  background: #009c76;
+}
+
+.categoria-titulo {
+  margin-top: 3rem;
+  font-size: 1.6rem;
+  color: var(--color-primario);
+  font-family: var(--fuente-titulos);
+  border-bottom: 2px solid var(--color-secundario);
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+footer {
+  background-color: var(--color-primario);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.contacto {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #f9f9fb;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.contacto h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #222;
+}
+
+.contacto form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacto label {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.contacto input,
+.contacto textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.contacto input:focus,
+.contacto textarea:focus {
+  border-color: #00cba9;
+  outline: none;
+}
+
+.contacto button {
+  margin-top: 20px;
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(90deg, #00cba9, #0083b0);
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contacto button:hover {
+  background: linear-gradient(90deg, #0083b0, #00cba9);
+}
+
+#respuesta {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  aspect-ratio: 16 / 6; /* Se ajusta como un banner horizontal responsivo */
+}
+
+.slides {
+  display: flex;
+  width: 100%;
+  animation: slideShow 12s infinite;
+}
+
+.slides img {
+  width: 100%;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+.acordeon {
+  max-width: 700px;
+  margin: 30px auto;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.acordeon-titulo {
+  background-color: #00cba9;
+  color: white;
+  padding: 15px;
+  width: 100%;
+  text-align: left;
+  font-size: 1.1rem;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: background 0.3s;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.acordeon-titulo:hover {
+  background-color: #0083b0;
+}
+
+.acordeon-contenido {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s;
+  background-color: #f1f1f1;
+  padding: 0 15px;
+  border-radius: 0 0 5px 5px;
+}
+
+.acordeon-contenido p {
+  margin: 15px 0;
+}
+
+/* Animación con pausa entre cada slide */
+@keyframes slideShow {
+  0% { transform: translateX(0%); }
+  25% { transform: translateX(0%); }
+
+  33.33% { transform: translateX(-100%); }
+  58.33% { transform: translateX(-100%); }
+
+  66.66% { transform: translateX(-200%); }
+  91.66% { transform: translateX(-200%); }
+
+  100% { transform: translateX(0%); }
+}
+
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+  .menu {
+    display: none;
+    flex-direction: column;
+    background-color: var(--color-primario);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 0;
+    gap: 1rem;
+    z-index: 99;
+  }
+  .menu.activo {
+    display: flex;
+  }
+  .productos {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .productos {
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 1025px) {
+  .productos {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contacto {
+    margin: 20px 10px;
+    padding: 20px;
+  }
+}

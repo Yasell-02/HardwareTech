@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HardwareTech - Productos</title>
+  <link rel="stylesheet" href="CSS.css" />
+  <link rel="icon" href="LOGO.png">
+  <script defer>
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggle = document.getElementById('menu-toggle');
+      const menu = document.getElementById('menu');
+      toggle.addEventListener('click', () => {
+        menu.classList.toggle('activo');
+      });
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <nav class="nav-principal">
+      <div class="logo-container">
+        <a href="INDEX.html"><img src="LOGO.png" alt="Logo" class="logo-img" /></a>
+        <h1 class="logo">HARDWARE TECH</h1>
+      </div>
+      <button id="menu-toggle" class="menu-toggle">☰</button>
+      <ul class="menu" id="menu">
+        <li><a href="PRODUCTOS.html">🖥️ PRODUCTOS</a></li>
+        <li><a href="SERVICIOS.html">🛠️ SERVICIOS</a></li>
+        <li><a href="NOSOTROS.html">📘 SOBRE NOSOTROS</a></li>
+        <li><a href="USUARIO.html">👤 ASESORIA</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<main>
+  <section class="contenido">
+
+    <!-- Categoría: Memorias RAM -->
+    <h3 class="categoria-titulo">🔹 Memorias RAM</h3>
+    <div class="productos-grid">
+      <article class="producto"><img src="MEMORIA5.jpg" alt="RAM"><h3>RAM 8GB DDR4</h3><p>$30.00</p><button>Más Información</button></article>
+      <article class="producto"><img src="MEMORIA2.jpg" alt="RAM"><h3>RAM 16GB DDR4</h3><p>$45.00</p><button>Más Información</button></article>
+      <article class="producto"><img src="MEMORIA1.jpg" alt="RAM"><h3>RAM 32GB DDR4</h3><p>$75.00</p><button>Más Información</button></article>
+      <article class="producto"><img src="MEMORIA4.jpg" alt="RAM"><h3>RAM 8GB RGB</h3><p>$35.00</p><button>Más Información</button></article>
+      <article class="producto"><img src="MEMORIA3.png" alt="RAM"><h3>RAM 16GB RGB</h3><p>$55.00</p><button>Más Información</button></article>
+    </div>
+
+    <!-- Categoría: Discos Duros -->
+    <h3 class="categoria-titulo">🔹 Discos Duros</h3>
+    <div class="productos-grid">
+      <article class="producto"><img src="DISCO1.jpg" alt="SSD"><h3>SSD 240GB</h3><p>$25.00</p><button>Más Información</button></article>
+      <article class="producto"><img src="DISCO2.jpg" alt="SSD"><h3>SSD 480GB</h3><p>$40.00</p><button>Más Información</button></article>
+      <article class="producto"><img src="DISCO3.jpg" alt="HDD"><h3>HDD 1TB</h3><p>$35.00</p><button>Más Información</button></article>
+      <article class="producto"><img src="DISCO4.jpg" alt="HDD"><h3>HDD 2TB</h3><p>$60.00</p><button>Más Información</button></article>
+    </div>
+
+    <!-- Categoría: Tarjetas Gráficas -->
+    <h3 class="categoria-titulo">🔹 Tarjetas Gráficas</h3>
+    <div class="productos-grid">
+      <article class="producto"><img src="GRAFICA2.jpeg" alt="GPU"><h3>GTX 1050 Ti</h3><p>$120.00</p><button>Más Información</button></article>
+      <article class="producto"><img src="GRAFICA1.jpg" alt="GPU"><h3>GTX 1660</h3><p>$230.00</p><button>Más Información</button></article>
+      <article class="producto"><img src="GRAFICA3.jpg" alt="GPU"><h3>RTX 3060</h3><p>$350.00</p><button>Más Información</button></article>
+    </div>
+
+    <!-- Categoría: Case -->
+    <h3 class="categoria-titulo">🔹 Gabinetes (Case)</h3>
+    <div class="productos-grid">
+      <article class="producto"><img src="CASE1.jpg" alt="Case"><h3>Case RGB ATX</h3><p>$70.00</p><button>Más Información</button></article>
+      <article class="producto"><img src="CASE2.png" alt="Case"><h3>Case Micro-ATX</h3><p>$55.00</p><button>Más Información</button></article>
+    </div>
+
+    <!-- Categoría: Fuente de Poder -->
+    <h3 class="categoria-titulo">🔹 Fuentes de Poder</h3>
+    <div class="productos-grid">
+      <article class="producto"><img src="FUE1.jpg" alt="PSU"><h3>Fuente 500W 80+</h3><p>$40.00</p><button>Más Información</button></article>
+      <article class="producto"><img src="FUE2.jpg" alt="PSU"><h3>Fuente 600W RGB</h3><p>$65.00</p><button>Más Información</button></article>
+    </div>
+
+    <!-- Categoría: Accesorios -->
+    <h3 class="categoria-titulo">🔹 Accesorios</h3>
+    <div class="productos-grid">
+      <article class="producto"><img src="MOU1.jpg" alt="Mouse"><h3>Mouse Gamer RGB</h3><p>$20.00</p><button>Más Información</button></article>
+      <article class="producto"><img src="TECLA1.jpeg" alt="Teclado"><h3>Teclado Mecánico</h3><p>$45.00</p><button>Más Información</button></article>
+      <article class="producto"><img src="AUDI1.jpg" alt="Headset"><h3>Auriculares Gamer</h3><p>$35.00</p><button>Más Información</button></article>
+      <article class="producto"><img src="MONITOR1.jpg" alt="Monitor"><h3>Monitor 60 Hz</h3><p>$85.00</p><button>Más Información</button></article>
+
+    </div>
+
+  </section>
+</main>
+
+  <footer>
+    <p>&copy; 2025 HardwareTech. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

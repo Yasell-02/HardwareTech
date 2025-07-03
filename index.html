@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HardwareTech - Inicio</title>
+  <link rel="stylesheet" href="CSS.css" />
+  <link rel="icon" href="LOGO.png">
+  <script defer>
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggle = document.getElementById('menu-toggle');
+      const menu = document.getElementById('menu');
+      toggle.addEventListener('click', () => {
+        menu.classList.toggle('activo');
+      });
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <nav class="nav-principal">
+      <div class="logo-container">
+        <a href="INDEX.html"><img src="LOGO.png" alt="Logo" class="logo-img" /></a>
+        <h1 class="logo">HARDWARE TECH</h1>
+      </div>
+      <button id="menu-toggle" class="menu-toggle">☰</button>
+      <ul class="menu" id="menu">
+        <li><a href="PRODUCTOS.html">🖥️ PRODUCTOS</a></li>
+        <li><a href="SERVICIOS.html">🛠️ SERVICIOS</a></li>
+        <li><a href="NOSOTROS.html">📘 SOBRE NOSOTROS</a></li>
+        <li><a href="USUARIO.html">👤 ASESORIA</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+<section class="slider">
+  <div class="slides">
+    <img src="SLIDER1.png" alt="Banner 1" />
+    <img src="SLIDER3.png" alt="Banner 2" />
+    <img src="SERVI.png" alt="Banner 3" />
+  </div>
+</section>
+
+    <section class="hero">
+      <h2>Componentes de Calidad & Asesoría Confiable</h2>
+      <p>Encuentra los mejores accesorios y el consejo experto que necesitas.</p>
+      <a href="productos.html" class="btn">Ver Productos</a>
+    </section>
+
+    <section class="destacados">
+      <h3>Productos Destacados</h3>
+      <div class="productos">
+        <article class="producto">
+          <img src="GRAFICA LOGO.PNG" alt="Tarjeta Gráfica" />
+          <h4>Tarjeta Gráfica RTX</h4>
+          <p>Rendimiento alto para juegos y diseño.</p>
+        </article>
+        <article class="producto">
+          <a href="USUARIO.html"><img src="ASESORIA LOGO.PNG" alt="Asesoría Técnica" /></a>
+          <h4>Asesoría Personalizada</h4>
+          <p>Te guiamos paso a paso según tu necesidad.</p>
+        </article>
+        <article class="producto">
+          <img src="LOGO.png" alt="Logo" />
+          <h4>Confianza & Calidad</h4>
+          <p>La tienda más confiable de hardware en Panamá.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 HardwareTech. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

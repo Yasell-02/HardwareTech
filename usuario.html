@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HardwareTech - Usuario</title>
+  <link rel="stylesheet" href="CSS.css" />
+  <link rel="icon" href="LOGO.png">
+  <script defer>
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggle = document.getElementById('menu-toggle');
+      const menu = document.getElementById('menu');
+      toggle.addEventListener('click', () => {
+        menu.classList.toggle('activo');
+      });
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <nav class="nav-principal">
+      <div class="logo-container">
+        <a href="INDEX.html"><img src="LOGO.png" alt="Logo" class="logo-img" /></a>
+        <h1 class="logo">HARDWARE TECH</h1>
+      </div>
+      <button id="menu-toggle" class="menu-toggle">☰</button>
+      <ul class="menu" id="menu">
+        <li><a href="PRODUCTOS.html">🖥️ PRODUCTOS</a></li>
+        <li><a href="SERVICIOS.html">🛠️ SERVICIOS</a></li>
+        <li><a href="NOSOTROS.html">📘 SOBRE NOSOTROS</a></li>
+        <li><a href="USUARIO.html">👤 ASESORIA</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+  <section class="contacto">
+  <h2>Contáctanos</h2>
+  <form id="form-contacto">
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" required placeholder="Tu nombre completo">
+
+    <label for="correo">Correo</label>
+    <input type="email" id="correo" required placeholder="ejemplo@correo.com">
+
+    <label for="mensaje">Mensaje</label>
+    <textarea id="mensaje" rows="5" required placeholder="¿En qué podemos ayudarte?"></textarea>
+
+    <button type="submit">Enviar a WhatsApp</button>
+    <p id="respuesta"></p>
+  </form>
+  </section>
+    </section>
+  </main>
+
+  <script>
+  document.getElementById("form-contacto").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const nombre = document.getElementById("nombre").value.trim();
+    const correo = document.getElementById("correo").value.trim();
+    const mensaje = document.getElementById("mensaje").value.trim();
+
+    const numeroTelefono = "50760200740";
+
+    const texto = `Hola, soy ${nombre}, mi correo es ${correo}. Mensaje: ${mensaje}`;
+    const url = `https://wa.me/${numeroTelefono}?text=${encodeURIComponent(texto)}`;
+
+    window.open(url, "_blank");
+  });
+</script>
+
+  <footer>
+    <p>&copy; 2025 HardwareTech. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

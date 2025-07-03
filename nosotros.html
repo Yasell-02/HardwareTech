@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HardwareTech - Sobre Nosotros</title>
+  <link rel="stylesheet" href="CSS.css" />
+  <link rel="icon" href="LOGO.png">
+  <script defer>
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggle = document.getElementById('menu-toggle');
+      const menu = document.getElementById('menu');
+      toggle.addEventListener('click', () => {
+        menu.classList.toggle('activo');
+      });
+    });
+  </script>
+</head>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const botones = document.querySelectorAll(".acordeon-titulo");
+
+    botones.forEach(boton => {
+      boton.addEventListener("click", function () {
+        const contenido = this.nextElementSibling;
+
+        // Cerrar otros abiertos (opcional)
+        document.querySelectorAll(".acordeon-contenido").forEach(el => {
+          if (el !== contenido) {
+            el.style.maxHeight = null;
+            el.style.paddingTop = "0";
+            el.style.paddingBottom = "0";
+          }
+        });
+
+        // Toggle del actual
+        if (contenido.style.maxHeight) {
+          contenido.style.maxHeight = null;
+          contenido.style.paddingTop = "0";
+          contenido.style.paddingBottom = "0";
+        } else {
+          contenido.style.maxHeight = contenido.scrollHeight + "px";
+          contenido.style.paddingTop = "10px";
+          contenido.style.paddingBottom = "10px";
+        }
+      });
+    });
+  });
+</script>
+
+<body>
+  <header>
+    <nav class="nav-principal">
+      <div class="logo-container">
+        <a href="INDEX.html"><img src="LOGO.png" alt="Logo" class="logo-img" /></a>
+        <h1 class="logo">HARDWARE TECH</h1>
+      </div>
+      <button id="menu-toggle" class="menu-toggle">☰</button>
+      <ul class="menu" id="menu">
+        <li><a href="PRODUCTOS.html">🖥️ PRODUCTOS</a></li>
+        <li><a href="SERVICIOS.html">🛠️ SERVICIOS</a></li>
+        <li><a href="NOSOTROS.html">📘 SOBRE NOSOTROS</a></li>
+        <li><a href="USUARIO.html">👤 ASESORIA</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+<div class="acordeon">
+  <button class="acordeon-titulo">📘 Sobre Nosotros</button>
+  <div class="acordeon-contenido">
+    <p>En HardwareTech trabajamos con pasión por la tecnología. Brindamos soluciones accesibles, asesoría confiable y productos de calidad para todos.</p>
+  </div>
+
+  <button class="acordeon-titulo">🎯 Misión</button>
+  <div class="acordeon-contenido">
+    <p>Brindar soluciones tecnológicas confiables y asesoría especializada a nuestros clientes, facilitando el acceso a componentes de calidad y servicio técnico profesional.</p>
+  </div>
+
+  <button class="acordeon-titulo">🌟 Visión</button>
+  <div class="acordeon-contenido">
+    <p>Ser la tienda líder en Panamá en servicios y productos de computación, destacando por nuestra excelencia en atención al cliente y compromiso con la innovación.</p>
+  </div>
+</div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 HardwareTech. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
